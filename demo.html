@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <title>Blockrain.js - A Tetris game in HTML5 + Javascript (with autoplay!)</title>
+
+  <meta name="description" content="Blockrain.js lets you embed the classic Tetris game on your website" />
+  <meta name="keywords" content="js, jquery, game, plugin, html5, tetris" />
+
+  <!-- Twitter Stuff -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Blockrain.js - a Tetris game in HTML5 + Javascript" />
+  <meta property="twitter:description" content="Blockrain.js lets you embed the classic Tetris game on your website" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+  <link rel="shortcut icon" href="assets/images/favicon.png">
+
+  <link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="src/blockrain.css">
+</head>
+<body>
+
+
+<section>
+
+  <header>
+    <h1>Check out the demo</h1>
+  </header>
+
+  <section id="examples">
+    <header>
+      <h1>Try it yourself!</h1>
+    </header>
+    <article id="example-slider">
+      <div class="example">
+        <div class="theme">theme: <strong>"vim"</strong></div>
+        <div class="instructions">
+          Use only arrows
+          <div class="keyboard">
+            <div class="key key-up"></div>
+            <div class="key key-left"></div>
+            <div class="key key-down"></div>
+            <div class="key key-right"></div>
+          </div>
+        </div>
+        <div class="game" id="tetris-demo"></div>
+      </div>
+      <div class="buttons">
+        <a href="" class="btn btn-prev">Previous</a>
+        <a href="" class="btn btn-next">Next</a>
+      </div>
+    </article>
+
+  </section>
+</section>
+
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="src/blockrain.jquery.libs.js"></script>
+<script src="src/blockrain.jquery.src.js"></script>
+<script src="src/blockrain.jquery.themes.js"></script>
+
+<script>
+
+  var $demo = $('#tetris-demo').blockrain({
+    speed: 20,
+    theme: 'meanpug',
+  });
+
+</script>
+
+</body>
+</html>
